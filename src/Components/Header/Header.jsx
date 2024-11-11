@@ -1,27 +1,42 @@
+import { useCallback } from 'react'
 import './Header.css'
+import { useState } from 'react'
 
 function Header() {
+    const [dropdownVisible, setDopdrownVisible] = useState(false)
+    const toggleDropdown=()=>{
+        setDopdrownVisible(!dropdownVisible)
+    }
 
-
+    const [lang, setLang] = useState('English')
+    const handleLang=(selectedLang)=>{
+        setLang(selectedLang)
+    }
     return (
         <div className="container">
             <div className="logo">
                 <img src="/netflix-3.svg" alt="netflix-logo" />
             </div>
             <div className="nav">
-                <div className="lang">
-                    <select className='lang-selector' name="lang-selector" id="lang-selector">
-                        <option value="English">English</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                <div onClick={toggleDropdown} className="language-selector">
+                    <i className="fas fa-globe"></i>
+                    {lang}
+                    <i class="fas fa-caret-down"></i>
+                    <div className={`dropdown ${dropdownVisible ? 'show' : ''}`}>
+                        <a href="#" key='English' onClick={()=>{handleLang('English')}}>English</a>
+                        <a href="#" key='Spanish' onClick={()=>{handleLang('Spanish')}}>Spanish</a>
+                        <a href="#" key='French' onClick={()=>{handleLang('French')}}>French</a>
+                        <a href="#" key='German' onClick={()=>{handleLang('German')}}>German</a>
+                    </div>
                 </div>
                 <div className="sign-in">
-                    <button>sign in</button>
+                    Sign In
                 </div>
             </div>
-        </div>
+
+
+
+        </div >
     )
 }
 
