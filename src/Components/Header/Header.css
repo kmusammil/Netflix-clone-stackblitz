@@ -1,10 +1,10 @@
 .container{
     height: 50px;
-    background-color: black;
     padding: 25px 50px 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 100%;
 }
 
 .logo{
@@ -31,7 +31,7 @@
     position: relative;
 }
 .language-selector {
-    background-color: #000;
+    background-color: rgb(2, 90, 253);
     color: #fff;
     border: 1px solid #fff;
 }

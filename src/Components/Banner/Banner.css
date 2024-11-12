@@ -1,0 +1,15 @@
+.banner-container{
+    height: 89vh;
+    position: relative;
+}
+
+.contents{
+    text-align: center;
+    color: white;
+
+}
+.contents h1{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 1000;
+}
