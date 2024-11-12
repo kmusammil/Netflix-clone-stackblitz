@@ -1,15 +1,35 @@
-.banner-container{
+.banner-container {
     height: 89vh;
     position: relative;
 }
 
-.contents{
+.contents {
     text-align: center;
     color: white;
 
 }
-.contents h1{
+
+.contents h1 {
     margin-top: 50px;
-    font-size: 50px;
-    font-weight: 1000;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: lowercase;
 }
+.contents h2{
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.get-started input, button{
+    height: 30px;
+    padding: 10px 20px;
+}
+
