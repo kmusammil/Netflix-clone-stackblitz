@@ -13,15 +13,7 @@ function Banner() {
                     <button>Get Started</button>
                     <i className="fa-solid fa-angle-right"></i>
                 </div>
-                <div className="bg-black">
-                    <div className="curved-bg">
-                        <div className="absolute inset-0 bg-cover bg-center" ></div>
-                    </div>
-                </div>
             </div>
-
-
-
         </>
     )
 }

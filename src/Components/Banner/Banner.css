@@ -60,20 +60,3 @@
     top: 330px;
 }
 
-.curved-bg {
-    background: linear-gradient(to bottom, #000000, #000000 50%, #1a1a1a 50%, #1a1a1a);
-    border-top-left-radius: 10% 1%;
-    border-top-right-radius: 50% 20%;
-    height: 5px;
-    position: relative;
-    overflow: hidden;
-}
-.curved-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: linear-gradient(to bottom, #ff0000, #ff00ff);
-}

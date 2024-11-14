@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './Components/Banner/Banner'
+import CurveLine from './Components/CurveLine/CurveLine'
 import Header from './Components/Header/Header'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="main-wrapper">
         <Header/>
         <Banner/>
+        <CurveLine/>
       </div>
       
     </>
