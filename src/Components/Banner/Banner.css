@@ -28,8 +28,23 @@
     gap: 10px;
     margin-top: 15px;
 }
-.get-started input, button{
-    height: 30px;
+.get-started input{
+    height: 40px;
+    width: 100px;
     padding: 10px 20px;
+    outline: none;
+    font-size: small;
+    background: rgb(58, 56, 56);
+    color: white;
+    border: white .3px solid;
+    border-radius: 2px;
+}
+.get-started button{
+    height: 60px;
+    padding: 0 50px;
+    background: rgb(199, 1, 1);
+    outline: none;
+    border: none;
+    color: white;
 }
 
