@@ -1,21 +1,20 @@
-function TrendingNow() {
-    return (
-        <>
-            <div className="bg-black text-white h-auto">
-                <div class="relative inline-block text-left">
-                    <button type="button" class=" text-white px-4 py-2  border-2">
-                        India
-                    </button>
-                    <div class="dropdown-menu hidden absolute  bg-white shadow-lg mt-2 w-48 right-0">
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a>
-                    </div>
-                </div>
+import { useState, useRef } from 'react';
+import TrendingNowDropdowns from './TrendingNowDropdowns/TrendingNowDropdowns';
 
+function TrendingNow() {
+    
+
+
+
+    return (
+        <div className="bg-black text-white h-64">
+            <div className="relative inline-block text-left mt-10 ml-20">
+                {/* Button to toggle dropdown */}
+                <p className="font-bold text-2xl mb-5">Trending Now</p>
+                <TrendingNowDropdowns/>
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default TrendingNow;

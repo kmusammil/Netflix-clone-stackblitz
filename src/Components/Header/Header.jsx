@@ -1,4 +1,3 @@
-import { useCallback } from 'react'
 import './Header.css'
 import { useState } from 'react'
 
@@ -21,7 +20,7 @@ function Header() {
                 <div onClick={toggleDropdown} className="language-selector">
                     <i className="fas fa-globe"></i>
                     {lang}
-                    <i class="fas fa-caret-down"></i>
+                    <i className="fas fa-caret-down"></i>
                     <div className={`dropdown ${dropdownVisible ? 'show' : ''}`}>
                         <a href="#" key='English' onClick={()=>{handleLang('English')}}>English</a>
                         <a href="#" key='Spanish' onClick={()=>{handleLang('Spanish')}}>Spanish</a>
