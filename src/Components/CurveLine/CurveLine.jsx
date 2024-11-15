@@ -2,7 +2,7 @@ import React from 'react';
 
 const CurveLine = () => {
   return (
-    <div className="w-full h-24 relative overflow-hidden mb-16">
+    <div className="w-full relative overflow-hidden">
       <svg 
         className="w-full h-full"
         viewBox="0 0 1200 100" 

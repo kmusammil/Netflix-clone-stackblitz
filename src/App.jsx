@@ -14,7 +14,6 @@ function App() {
         <CurveLine/>
       </div>
         <TrendingNow/>
-
     </>
   )
 }
