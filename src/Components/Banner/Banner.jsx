@@ -10,8 +10,10 @@ function Banner() {
                 </div>
                 <div className="get-started">
                     <input type="text" placeholder='Email Address' />
-                    <button>Get Started</button>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <button>
+                        Get Started
+                        <i className="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
             </div>
         </>

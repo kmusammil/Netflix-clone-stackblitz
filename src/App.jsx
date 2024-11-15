@@ -2,6 +2,7 @@ import './App.css'
 import Banner from './Components/Banner/Banner'
 import CurveLine from './Components/CurveLine/CurveLine'
 import Header from './Components/Header/Header'
+import TrendingNow from './Components/TrendingNow/TrendingNow'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
         <Banner/>
         <CurveLine/>
       </div>
-      
+        <TrendingNow/>
+
     </>
   )
 }
